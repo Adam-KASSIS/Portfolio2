@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam KASSIS - Creative Portfolio</title>
+    <link rel="stylesheet" href="./style2.css"/>
+  </head>
+  <body>
+    <!-- Navbar Toggle Button -->
+    <button class="navbar-toggle" 
+            data-tooltip="Hide Navigation"
+            aria-label="Hide navigation menu"
+            aria-expanded="true"
+            aria-controls="navbar">
+      <!-- Close Icon (shown when navbar is visible) -->
+      <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+      
+      <!-- Open Icon (shown when navbar is hidden) -->
+      <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <div id="home">
+        <div class="profile_name">
+          <span class="name-glow">Adam KASSIS</span>
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="email icon"/>
+            adam.kassis@outlook.fr
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="phone icon"/>
+            +13456764598
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div class="profile-image-container">
+        <div class="image-rings"></div>
+        <img src="html_finalprojimages/Portraitph.jpg" class="profile_image" alt="Adam's portrait"/>
+      </div>
+      
+      <div class="about-content">
+        <h1>
+          <span class="typed-text"></span>
+          <span class="cursor">|</span>
+        </h1>
+        <p class="fade-in">
+          I am a <strong>Computer Science Engineering</strong> student specializing in <strong>Data Engineering</strong>.
+          I enjoy building scalable systems and experimenting with frontier physics concepts.
+          I also work on personal projects involving AI, web apps, and databases.
+        </p>
+        <div class="cta-buttons">
+          <button class="cta-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Get In Touch
+          </button>
+          <button class="cta-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+            View Projects
+          </button>
+        </div>
+      </div>
+    </section>
+            
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">
+        <span>My Skills</span>
+        <div class="title-underline"></div>
+      </h2>
+
+      <div class="all_skills">
+        <div class="skill" data-skill="html">
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/html5.png" alt="HTML5"/>
+          </div>
+          <h6>HTML</h6>
+          <div class="skill-bar">
+            <span data-width="70%"></span>
+          </div>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill" data-skill="javascript">
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/js.jpeg" alt="JavaScript"/>
+          </div>
+          <h6>JavaScript</h6>
+          <div class="skill-bar">
+            <span data-width="85%"></span>
+          </div>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill" data-skill="css">
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/css3.png" alt="CSS3"/>
+          </div>
+          <h6>CSS</h6>
+          <div class="skill-bar">
+            <span data-width="50%"></span>
+          </div>
+          <p>3 months experience</p>
+        </div>  
+
+        <div class="skill" data-skill="python">
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/python.png" alt="Python"/>
+          </div>
+          <h6>Python</h6>
+          <div class="skill-bar">
+            <span data-width="90%"></span>
+          </div>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill" data-skill="sql">
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/sql.jpg" alt="SQL"/>
+          </div>
+          <h6>SQL</h6>
+          <div class="skill-bar">
+            <span data-width="75%"></span>
+          </div>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="skill" data-skill="cpp">
+          <div class="skill-icon-wrapper">
+            <img src="html_finalprojimages/c++.jpg" alt="C++"/>
+          </div>
+          <h6>C++</h6>
+          <div class="skill-bar">
+            <span data-width="80%"></span>
+          </div>
+          <p>2 years experience</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">
+        <span>Featured Projects</span>
+        <div class="title-underline"></div>
+      </h2>
+
+      <div class="projects-container">
+        <div class="project-card" data-project="1">
+          <div class="project-number">01</div>
+          <div class="project-icon">🔄</div>
+          <h3>Data Pipeline</h3>
+          <ul>
+            <li>Designed and implemented a data ingestion pipeline using Python and SQL for real-time analytics.</li>
+            <li>Achieved 90% reduction in processing time with optimized queries</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">ETL</span>
+          </div>
+        </div>
+        
+        <div class="project-card" data-project="2">
+          <div class="project-number">02</div>
+          <div class="project-icon">🌐</div>
+          <h3>Portfolio Website</h3>
+          <ul>
+            <li>Created a responsive portfolio website with HTML, CSS, and JavaScript to showcase my skills and projects.</li>
+            <li>Implemented modern design with glassmorphism and smooth animations</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        
+        <div class="project-card" data-project="3">
+          <div class="project-number">03</div>
+          <div class="project-icon">🤖</div>
+          <h3>Machine Learning API</h3>
+          <ul>
+            <li>Built a REST API for text classification using Flask and deployed it on cloud infrastructure.</li>
+            <li>Handles 1000+ requests per minute with 95% accuracy</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Flask</span>
+            <span class="tag">ML</span>
+            <span class="tag">Cloud</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2 class="section-title">
+        <span>What People Say</span>
+        <div class="title-underline"></div>
+      </h2>
+      
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <div class="quote-icon">❝</div>
+          <p>Adam is a highly motivated student with strong problem-solving skills. He consistently contributes innovative ideas and follows through with practical implementations.</p>
+          <div class="recommendation-author">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <strong>Anonymous</strong>
+              <span>Colleague</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="recommendation">
+          <div class="quote-icon">❝</div>
+          <p>Working with Adam has been a pleasure. His logical thinking and ability to explain complex concepts in a clear way make him a valuable team member.</p>
+          <div class="recommendation-author">
+            <div class="author-avatar">T</div>
+            <div class="author-info">
+              <strong>Anonymous</strong>
+              <span>Team Lead</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="recommendation">
+          <div class="quote-icon">❝</div>
+          <p>Adam quickly learns new technologies and applies them effectively. He shows leadership potential and a deep interest in building impactful software solutions.</p>
+          <div class="recommendation-author">
+            <div class="author-avatar">M</div>
+            <div class="author-info">
+              <strong>Anonymous</strong>
+              <span>Mentor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" id="rec_name" placeholder="Your Name (Optional)" autocomplete="name">
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Share your thoughts..."></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">
+              <span>Submit Recommendation</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Scroll to top button -->
+    <div class="iconbutton" id="scrollBtn">
+        <a href="javascript:void(0);" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+            stroke-width="2" stroke="white" width="24px" height="24px">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Success Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <div class="success-checkmark">
+          <div class="check-icon">
+            <span class="icon-line line-tip"></span>
+            <span class="icon-line line-long"></span>
+            <div class="icon-circle"></div>
+            <div class="icon-fix"></div>
+          </div>
+        </div>
+        <h3>Thank You!</h3>
+        <p>Your recommendation has been submitted successfully.</p>
+        <button onclick="showPopup(false)" class="popup-btn">Awesome!</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
